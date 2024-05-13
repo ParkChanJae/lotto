@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lotto">
+
+<!--개인 로또번호 지급 -->
+<insert id="soloinsert">
+INSERT INTO lottonum (mb_id, drwtNo1, drwtNo2, drwtNo3, drwtNo4, drwtNo5, drwtNo6, bonusNumber)
+  SELECT
+      m.mb_id,
+      #{drwtNo1},
+      #{drwtNo2},
+      #{drwtNo3},
+      #{drwtNo4},
+      #{drwtNo5},
+      #{drwtNo6},
+      #{bonusNumber}
+  FROM member m
+  WHERE m.mb_id = #{mb_id}
+</insert>
+
+
+<!-- 개인 로또 번호 조회 -->
+<select id="solo_select" resultType="lotto.LottoSoloVO">
+SELECT m.mb_name, l.drwtNo1, l.drwtNo2, l.drwtNo3, l.drwtNo4, l.drwtNo5, l.drwtNo6, l.bonusNumber
+    FROM member m
+    JOIN lottonum l ON m.mb_id = l.mb_id
+    WHERE m.mb_id = #{mb_id}
+    LIMIT 1;
+</select>
+
+<select id="total" resultType="integer">
+SELECT count(*) FROM lotto 
+</select>
+
+<!-- 목록조회 번호 및 시작 과 끝 -->
+<select id="plist" resultType="lotto.LottoVO">
+<!-- SELECT  *
+FROM lotto b
+ORDER BY drwNo desc
+LIMIT 20; -->
+SELECT *, CAST(FirstWinamnt as UNSIGNED) as formattedFirstWinamnt
+FROM lotto b
+ORDER BY drwNo desc
+LIMIT 20;
+</select>
+
+<!-- home 로또 수정 -->
+<update id="update">
+update homelotto
+set no1_total = #{no1_total},
+ 	no1_winner = #{no1_winner},
+ 	no1_money = #{no1_money},
+ 	no2_total = #{no2_total},
+ 	no2_winner = #{no2_winner},
+ 	no2_money = #{no2_money},
+ 	no3_total = #{no3_total},
+ 	no3_winner = #{no3_winner},
+ 	no3_money = #{no3_money},
+ 	no4_total = #{no4_total},
+ 	no4_winner = #{no4_winner},
+ 	no4_money = #{no4_money},
+ 	no5_total = #{no5_total},
+ 	no5_winner = #{no5_winner},
+ 	no5_money = #{no5_money}
+where no = #{no}
+</update>
+
+<select id="homelist" resultType="lotto.HomeLottoVO">
+select *
+from homelotto
+</select>
+
+
+</mapper>

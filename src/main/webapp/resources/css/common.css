@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+ul {
+	list-style: none;
+}
+a{
+	color:inherit;
+	text-decoration: none;
+}
+
+html {
+	font-size: 18px;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+
+
+.w-pct80 { width:80% }
+.w-pct60 { width:60% }
+.w-pct40 { width:40% }
+
+.w-px40 { width:40px }
+.w-px60 { width:60px }
+.w-px80 { width:80px }
+.w-px100 { width:100px }
+.w-px120 { width:120px }
+.w-px140 { width:140px }
+.w-px150 { width:150px }
+.w-px160 { width:160px }
+.w-px180 { width:180px }
+.w-px200 { width:200px }
+.w-px220 { width:220px }
+.w-px250 { width:250px }
+.w-px300 { width:300px }
+.w-px350 { width:350px }
+.w-px400 { width:400px }
+.w-px500 { width:500px }
+.w-px600 { width:600px }
+.w-px700 { width:700px }
+.w-px800 { width:800px }
+.w-px900 { width:900px }
+.w-px1000 { width:1000px }
+.w-px1200 { width:1200px }
+
+.win {
+	border: solid 1px;
+	background-color: #3578e6;
+	height: 13rem;
+	
+}
+
+
+
+
+/* 홈 로또 번호 */
+
+.winNo1 {
+	display: inline-block;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    border: 9px solid #edaf39;
+    color: #000;
+    font-weight: bolder;
+    font-size: 36px;
+    background-color: white;
+}
+
+.winNo2 {
+	display: inline-block;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    border: 9px solid #1141b6;
+    color: #000;
+    font-weight: bolder;
+    font-size: 36px;
+    background-color: white;
+}
+
+.winNo3 {
+	display: inline-block;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    border: 9px solid #d85742;
+    color: #000;
+    font-weight: bolder;
+    font-size: 36px;
+    background-color: white;
+}
+
+.winNo4 {
+	display: inline-block;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    border: 9px solid #43474e;
+    color: #000;
+    font-weight: bolder;
+    font-size: 36px;
+    background-color: white;
+}
+
+.winNo5 {
+	display: inline-block;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    border: 9px solid #60b032;
+    color: #000;
+    font-weight: bolder;
+    font-size: 36px;
+    background-color: white;
+}
+
+ /* 메인홈 중간 */
+ .mainbor1 {
+ 	background-color: #a0cede;
+ }
+ 
+  .mainbor2 {
+ 	background-color: #00b9ce;
+ }
+ 
+  .mainbor3 {
+ 	background-color: #83cdbe;
+ }
+ 
+  .mainbor4 {
+ 	background-color: #0064a2;
+ }
+ 
+.btn-111 {
+	background-color: #3a3d44;
+    width: 16rem;
+    height: 4rem;
+    color: white;
+    border-radius: 18px;
+ }
+ 
+.btn-1111 {
+ background-color: #1bbc9b;
+    width: 20rem;
+    height: 5rem;
+    color: white;
+    border-radius: 10px;
+ }
+
+ /* 고객센터 */
+ .mem {
+ 	border: 2px solid #cfcfcf;
+ 	height: 14rem;
+ 	border-radius: 10px;
+ 	
+ }
+ 
+  /* 순위 */
+.king1 {
+ 	border: 1px solid red;
+    background-color: red;
+    border-radius: 10px;
+    margin: 0;
+    width: 33%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ 
+ .king2 {
+ 	border: 1px solid #ff5d00;
+    background-color: #ff5d00;
+    border-radius: 10px;
+    margin: 0;
+    width: 33%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ 
+ .king3 {
+ 	border: 1px solid #00a493;
+    background-color: #00a493;
+    border-radius: 10px;
+    margin: 0;
+    width: 33%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ 
+ .king4 {
+ 	border: 1px solid #009ff5;
+    background-color: #009ff5;
+    border-radius: 10px;
+    margin: 0;
+    width: 33%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ 
+ .king5 {
+ 	border: 1px solid #618a9b;
+    background-color: #618a9b;
+    border-radius: 10px;
+    margin: 0;
+    width: 33%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ 
+ 
+ 
